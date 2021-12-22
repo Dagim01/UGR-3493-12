@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fuzzy+Bubbles:wght@700&family=Gloria+Hallelujah&family=Inconsolata:wght@200;400&family=Reenie+Beanie&display=swap');
+body{
+    background-image: url(../images/backgroung.jpg);
+    margin: 0%;   
+}
+header{
+    display: flex;
+    width: 100%;
+    margin-left: 0cm;
+}
+.navL{
+    
+    font-size: 30px;
+    list-style-type:none;
+    text-align: center;
+}
+.navL li{
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    margin-right: 15px;
+    display: inline ;
+}
+.navL a{
+    font-size: 55%;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: rgba(160, 161, 144, 0.966);
+    font-size: 2vw;
+    
+}
+.navL li a:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(223, 71, 129);
+}
+.logo2{
+    border-radius: 10px;
+    display: block;
+    width: 15%;
+    height: 5%;
+    cursor: pointer;
+    size: 3vw;
+}    
+main{
+    display: grid;
+    grid-template-rows: 1fr;
+ font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgb(194, 198, 202);
+    
+}
+.me{
+    float:left;
+    margin-right: 10px;
+    max-width: 60%;
+    height:auto;
+    border-radius: 50px;
+}
+#who{
+    font-size: 4vw;
+    margin-left: 35%;
+}
+#mep{
+    color: inherit;
+    font-size: 2vw;
+    
+}
+.Fam{
+    margin-top: 10px;
+    width:60%;
+    height:auto;
+    border-radius:50px;
+    vertical-align:top;
+}
+#Famp{
+    display: inline-block;
+    font-size: 2vw;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgba(160, 161, 144, 0.966);
+    font-size: 1.5vw;
+}
+@media only screen and (max-width:600px) {
+    .navL{  
+        display: flex;
+        flex-direction: column;
+        font-size: 6vw;       
+    }    
+}
+@media only screen and (max-width:280px) {
+
+    footer{
+        margin-top: 35px;
+    }
+}

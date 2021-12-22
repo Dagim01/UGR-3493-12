@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fuzzy+Bubbles:wght@700&family=Gloria+Hallelujah&family=Inconsolata:wght@200;400&family=Reenie+Beanie&display=swap');
+body{
+    background-image: url(../images/backgroung.jpg);
+    margin: 0%;
+
+    width: 100%;
+    max-height: 100vh;
+
+
+}
+nav{
+    display: flex;
+}
+header{
+    display: flex;
+    width: 100%;
+    margin-left: 0cm;
+}
+.navL{
+    
+    font-size: 35px;
+    list-style-type:none;
+    text-align: center;
+}
+.navL li{
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    margin-right: 15px;
+    display: inline ;
+}
+.navL a{
+    text-align: center;
+    font-size: 55%;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: rgba(160, 161, 144, 0.966);
+    font-size: 2vw;
+    
+}
+.navL li a:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(223, 71, 129);
+}
+.logo2{
+    border-radius: 10px;
+    display: block;
+    width: 15%;
+    height: 5%;
+    cursor: pointer;
+    size: 3vw;
+}    
+main{
+    width:100%;
+    height: 100%;
+}
+.welcome{
+    height: 100%;
+    width: 100%;
+
+    }
+article{
+    
+    width: 100%;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    font-size: 45px;
+    color: rgba(160, 161, 144, 0.966);
+    justify-content: center;
+    margin: none;
+    font-size: 2vw;
+    }
+#arc{
+text-align: center;
+
+}
+#arcp{
+  text-align: center;
+    font-size: 70%;
+    font-size: 2vw;
+}
+footer{
+    bottom:0%;
+    width: 100%;
+    text-align: right;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgba(160, 161, 144, 0.966);
+    font-size: 1.5vw;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg);}
+    25% { transform: translate(-3px, 0px) rotate(5deg); }    
+    50% { transform: translate(-1px, 2px) rotate(0deg); }
+    75% { transform: translate(-1px, 2px) rotate(-5deg); }
+    100% { transform: translate(-1px, 2px) rotate(0deg); }
+    }
+@media only screen and (max-width:1050px) {
+    .navL{  
+        display: flex;
+        flex-direction: column;
+        font-size: 6vw;       
+    }    
+    footer{
+
+        bottom:0;
+        font-size: 3vw;
+    }
+    main{
+        width: 100%;
+        height: auto;
+    }
+article{
+    width: 100%;
+font-size: 6vw;
+font-family:Orbitron,Reenie Beanie, sans-serif ;
+    }
+#arcp{
+    width: 100%;
+    font-size: 5vw;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+}
+body{
+    width: 100%;
+height: 100vh;
+}
+}
+@media only screen and (max-width:400px) {
+    article{
+        font-size: 6vw;
+    }
+    #arcp{
+        font-size: 6vw; 
+    }
+    main{
+        width: 100%;
+        height:auto;
+    }
+    footer{
+
+        margin-top: 130px;
+        bottom: 0;
+        font-size: 3vw;
+    }
+    body{
+        min-height: 100vh;
+    }
+}

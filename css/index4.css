@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fuzzy+Bubbles:wght@700&family=Gloria+Hallelujah&family=Inconsolata:wght@200;400&family=Reenie+Beanie&display=swap');
+body{
+    background-image: url(../images/backgroung.jpg);
+    margin: 0%;   
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    width: 100%;
+    margin-left: 0cm;
+    height: fit-content;
+}
+.navL{
+    
+    font-size: 30px;
+    list-style-type:none;
+    text-align: center;
+}
+.navL li{
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    margin-right: 15px;
+    display: inline ;
+}
+.navL a{
+    font-size: 55%;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: rgba(160, 161, 144, 0.966);
+    font-size: 2vw;
+    
+}
+.navL li a:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(223, 71, 129);
+}
+.logo2{
+    border-radius: 10px;
+    display: block;
+    width: 15%;
+    height: 5%;
+    cursor: pointer;
+    size: 3vw;
+} 
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgb(213, 222, 231);
+    gap: 2vw;
+}
+.below{
+    color: rgb(213, 222, 231);
+    font-family:Orbitron,Reenie Beanie, sans-serif  ;
+    font-size: 3vw;
+    text-align: center;
+}
+.lit{
+     width:40%;
+    height: 50%;
+    border-radius: 40%;
+    vertical-align: bottom;
+} 
+.lit:hover{
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;  
+}  
+
+.fl{
+  width: 40%;
+    height:50%;
+    border-radius: 40%;
+    vertical-align: bottom;    
+}
+.fl:hover{
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+}
+#fl{
+    font-size: 1.5vw;
+    color: rgb(213, 222, 231);
+}
+#lit{
+    font-size: 1.5vw;
+    color: rgb(213, 222, 231);
+}
+
+footer{
+    
+    width: 100%;
+    text-align: right;
+    bottom: 0;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgb(213, 222, 231);
+    font-size: 1.5vw;
+}
+.pal{
+    color: rgb(194, 198, 202);
+    font-family:Orbitron,Reenie Beanie, sans-serif  ;
+    font-size: 2vw;
+   
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg);}
+    17% { transform: translate(-3px, 0px) rotate(3deg); }
+    33% { transform: translate(-3px, 0px) rotate(5deg); }    
+    50% { transform: translate(-1px, 2px) rotate(0deg); }
+    68% { transform: translate(-3px, 0px) rotate(-3deg); }
+    82% { transform: translate(-1px, 2px) rotate(-5deg); }
+    100% { transform: translate(-3px, 0px) rotate(-3deg); }
+    100% { transform: translate(-1px, 2px) rotate(0deg); }
+    }
+    @media only screen and (max-width:800px) {
+        .navL{  
+            display: flex;
+            flex-direction: column;
+            font-size: 6vw;       
+        }    
+    
+        body{
+            min-height: 100vh;
+        }
+        .navL a{  
+            display: flex;
+            flex-direction: column;
+            font-size: 4vw;       
+        }  
+        #pfl{
+            font-size: 13px;
+            color: rgb(213, 222, 231);
+        }
+        #plit{
+            font-size: 13px;
+            color: rgb(213, 222, 231);
+        }
+        .below{
+            color: rgb(213, 222, 231);
+            font-family:Orbitron,Reenie Beanie, sans-serif  ;
+            font-size: 15px;
+            text-align: center;
+    }
+    .pal{
+        color: rgb(194, 198, 202);
+        font-family:Orbitron,Reenie Beanie, sans-serif  ;
+        font-size: 12px;
+    }
+    main{
+        display: grid;
+        grid-template-columns:1fr;
+        font-family:Orbitron,Reenie Beanie, sans-serif ;
+        color: rgb(213, 222, 231);
+        gap: 55px;
+}
+    }

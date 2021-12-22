@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fuzzy+Bubbles:wght@700&family=Gloria+Hallelujah&family=Inconsolata:wght@200;400&family=Reenie+Beanie&display=swap');
+body{
+    background-image: url(../images/backgroung.jpg);
+    margin: 0%;
+    min-height: 100vh;   
+}
+header{
+    display: flex;
+    width: 100%;
+    margin-left: 0cm;
+}
+.navL{
+    
+    font-size: 30px;
+    list-style-type:none;
+    text-align: center;
+}
+.navL li{
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    margin-right: 15px;
+    display: inline ;
+}
+.navL a{
+    font-size: 55%;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: rgba(160, 161, 144, 0.966);
+    font-size: 2vw;
+    
+}
+.navL li a:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(223, 71, 129);
+}
+.logo2{
+    border-radius: 10px;
+    display: block;
+    width: 15%;
+    height: 5%;
+    cursor: pointer;
+    size: 3vw;
+} main{
+    display:grid;
+    grid-template-rows: 1fr;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgb(194, 198, 202);
+    font-size: 1.75vw;
+    overflow: hidden;
+}
+
+footer{
+
+    bottom: 0%;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgba(160, 161, 144, 0.966);
+    font-size: 1.25vw;
+    text-align: right;
+
+}
+@media only screen and (max-width:800px) {
+    .navL{  
+        display: flex;
+        flex-direction: column;
+        font-size: 2vw;       
+    }    
+    .navL a{
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        color: rgba(160, 161, 144, 0.966);
+        font-size: 5vw;
+    }
+    .footer{
+        bottom: 0;
+        text-align: right;
+        font-size: 3.25vw;
+    
+    }
+    main{
+        display:grid;
+        grid-template-rows: 1fr;
+        font-family:Orbitron,Reenie Beanie, sans-serif ;
+        color: rgb(194, 198, 202);
+        font-size: 3vw;
+        margin-bottom: 60px;
+}
+}
+@media only screen and (max-width:400px) {
+    .navL a{
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+        color: rgba(160, 161, 144, 0.966);
+        font-size: 4vw;
+    }
+    main{
+            display:grid;
+            grid-template-rows: 1fr;
+            font-family:Orbitron,Reenie Beanie, sans-serif ;
+            color: rgb(194, 198, 202);
+            font-size: 4vw;
+        }
+        .footer{
+
+            bottom: 0;
+            text-align: right;
+            font-size: 3vw;
+
+        }
+        body{
+            max-height: 100vh;
+        }
+    }

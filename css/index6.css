@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fuzzy+Bubbles:wght@700&family=Gloria+Hallelujah&family=Inconsolata:wght@200;400&family=Reenie+Beanie&display=swap');
+body{
+    background-image: url(../images/backgroung.jpg);
+    margin: 0%;
+    height: 100%;
+}
+nav{
+    display: flex;
+}
+header{
+    display: flex;
+    width: 100%;
+    margin-left: 0cm;
+}
+.navL{
+    
+    font-size: 35px;
+    list-style-type:none;
+    text-align: center;
+}
+.navL li{
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    margin-right: 15px;
+    display: inline ;
+}
+.navL a{
+    text-align: center;
+    font-size: 55%;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: rgba(160, 161, 144, 0.966);
+    font-size: 2vw;
+    
+}
+.navL li a:hover{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(223, 71, 129);
+}
+.logo2{
+    border-radius: 10px;
+    display: block;
+    width: 15%;
+    height: 5%;
+    cursor: pointer;
+    size: 3vw;
+}    
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgb(239, 242, 245);
+}
+footer{
+
+    text-align: right;
+    bottom: 0%;
+    width: 100%;
+    font-family:Orbitron,Reenie Beanie, sans-serif ;
+    color: rgba(246, 247, 236, 0.966);
+    font-size: 1.5vw;
+}
+
+.table{
+    border:1px solid white;
+    border-color: rgb(240, 240, 240);
+    
+}
+td{
+    color: rgb(233, 233, 233);
+    padding: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        border-collapse: collapse;
+        background-color: rgb(0, 0, 0);
+        text-align: left;
+        padding: 6px;
+}
+th{
+    padding: 6PX;
+    border: 1px solid rgb(255, 255, 255);
+        border-collapse: collapse;
+        border-color: rgb(179, 179, 231);
+        text-align: left;
+}
+@media only screen and (max-width:800px) {
+    .navL{  
+        display: flex;
+        flex-direction: column;
+        font-size: 6vw;       
+    }    
+    body{
+        min-height: 100vh;
+    }
+    .navL a{  
+        display: flex;
+        flex-direction: column;
+        font-size: 4vw;       
+    }    
+    footer{
+        position: fixed;
+        font-size: 3vw;
+        text-align: right;
+        bottom: 0;
+
+    }
+.table thead{
+    display: none;
+}
+.table,.table tbody,.table tr,.table td{
+    display: block;
+    width:100%
+}
+main{
+    min-width: 100vw;
+}
+.table tr{
+    margin-bottom: 15px;
+}
+.table td{
+    text-align: right;
+    padding-left: 50%;
+    text-align:left;
+    position: relative;
+}
+.table td::before{
+position: absolute;
+left:0;
+width: 50%;
+padding-left: 15px;
+}
+}
+@media only screen and (min-width:800px){
+    footer{
+        text-align: right;
+        position:fixed;
+        bottom: 0%;
+    }
+}
